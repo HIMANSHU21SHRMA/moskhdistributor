@@ -1,0 +1,277 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "montserrat";
+}
+ html,
+  body {
+	height: 100%;
+  
+	width: 100%;
+}
+  
+#nav{
+	height: 8vh;
+	width: 100%;
+   /*background-color: #000;*/
+   display: flex;
+   align-items: center;
+   padding: 0 2vw;
+   position: fixed;
+   gap: 45px;
+  position: fixed;
+  justify-content: center;
+   z-index: 99;
+}
+ 
+
+ #nav h4{
+  color:#fff;
+	text-transform: uppercase;
+    font-weight: 600;
+ }
+ #nav i{
+  font-size: 1.3;
+  flex-wrap: 800;
+  display: none;
+ 
+}
+
+ a{
+  position: relative;
+  text-decoration: none;
+  font-family: 'poppins',sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+
+ }
+ a:after{
+  content: "";
+  position: absolute;
+  color: #000;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+
+ }
+ a:hover{
+  color: #000;
+
+ }
+ a:hover:after{
+  width: 100%;
+  
+ }
+ .contact{
+   display: flex;
+   justify-content: center;
+
+}
+.headar h2{
+  margin-top: 30%;
+  font-size: 5vw;
+  align-items: center;
+  text-align: center;
+  
+}
+.headar p{
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 5%;
+}
+.headar span{
+   border-bottom: 2px solid aqua;
+}
+.follow{
+    margin-top: 10vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.us{
+    width: 60vw;
+    height: 25vw;
+   border: 1px solid rgb(136, 177, 177);
+    text-align: center;
+    padding: 2vw;
+}
+.us h1{
+    font-size: 5vw;
+    margin-bottom: 2vw;
+}
+.us i{
+ 
+  margin-top: 4vw;
+  font-size: 3vw;
+}
+
+/* Default state */
+#facebook{
+    color: lightblue;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover state */
+#facebook:hover {
+    color: blue;
+}
+    
+
+#instagram{
+    color: RGB(103, 58, 183);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover state */
+#instagram:hover {
+    color: rgba(221, 0, 255, 0.411);
+}
+#whatsapp{
+    color: greenyellow;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover state */
+#whatsapp:hover{
+    color: green;
+}
+.call{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+}
+.call i{
+    font-size: 3vw;
+}
+.cont{
+   width: 25%;
+   height: 30vh;
+   border: 2px solid aqua;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+h3{
+    text-align: center;
+}
+p{
+    font-weight: 500;
+}
+.phone{
+    height: 30vh;
+    width: 25%;
+    border: 2px solid aqua;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around;
+ 
+}
+.dev{
+    height: 30vh;
+    width: 25%;
+    border: 2px solid aqua;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around;
+
+ 
+}
+h5{
+    text-align: center;
+    font-weight: 400;
+}
+.footer{background-color: #000a;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+  justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 4px solid aqua;
+    
+  
+  }
+  .copy{
+    background-color: #ff5e5e;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copy p{
+    line-height: 12px;
+    font-weight: 400;
+  }
+  @media (max-width:900px) {
+    #nav h4{
+      
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+    
+    .call{
+     
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+     }
+     .cont{
+        width: 90vw;
+        height: 30vh;
+        border: 2px solid aqua;
+       display: flex;
+       margin: 20%;
+       align-items: center;
+       flex-direction: column;
+       justify-content: space-around;
+     }
+     .phone{
+        height: 30vh;
+        width: 90vw;
+        border: 2px solid aqua;
+        margin: 20%;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       justify-content: space-around;
+     
+    }
+    .dev{
+        height: 30vh;
+        width: 90vw;
+        border: 2px solid aqua;
+        margin: 20%;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       justify-content: space-around;
+     display: none;
+     
+    }
+    .footer{background-color: #000a;
+        width: 100%;
+        height: 30%;
+        display: flex;
+      justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 4px solid aqua;
+        flex-direction: column;
+      
+  }

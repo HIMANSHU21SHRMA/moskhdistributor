@@ -1,0 +1,773 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "montserrat";}
+	
+
+  
+  html,
+  body {
+	height: 100%;
+  
+	width: 100%;
+  
+  }
+  
+#nav{
+	height: 8vh;
+	width: 100%;
+   /*background-color: #000;*/
+   display: flex;
+   align-items: center;
+   padding: 0 2vw;
+   position: fixed;
+   gap: 45px;
+
+  justify-content: flex-start;
+   z-index: 99;
+
+ }
+ 
+#nav img{
+	height: 10vh;
+  margin-left: 15vw;
+ }
+ #nav h4{
+  color:#fff;
+	text-transform: uppercase;
+    font-weight: 600;
+ }
+ #nav i{
+  font-size: 1.3;
+  flex-wrap: 800;
+  display: none;
+ 
+}
+
+ a{
+  position: relative;
+  text-decoration: none;
+  font-family: 'poppins',sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+
+ }
+ a:after{
+  content: "";
+  position: absolute;
+  color: #000;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+
+ }
+ a:hover{
+  color: #000;
+
+ }
+ a:hover:after{
+  width: 100%;
+  
+ }
+ .video{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  overflow: hidden;
+
+ }
+ .main{
+position: relative;
+
+}
+.page1{
+  height: calc(100% - 50vh);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#fff
+  
+}
+
+ .page1 h1{
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 900;
+  margin:20% 1% 1% 1%;
+  }
+
+
+.page1 h2{
+  text-align: center;
+  font-weight: 800;
+}
+.page1 p{
+  font-weight: 500;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.page2{
+  margin-top: 200px;
+  margin-bottom: 200px;
+  height: calc(100% - 80vh);
+  display: flex;
+ align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff
+  ;
+}
+.acercon{
+  background-color: #fff;
+  border: 2px solid greenyellow;
+  width: 60vw;
+  height: 65vh;
+  margin-top: 10vw;
+  display: flex;
+  align-items: center;
+  
+}
+.text{
+margin-left: 5vw;
+margin-top: 20vw;
+  width: 50%;
+  height: 100%;
+
+}
+
+.text p{
+  font-size: 2.2vw;
+  font-weight: 600;
+  margin-top: 4vw;
+}
+.text button{
+  height: 7vh;
+  width: 12vw;
+  margin-top: 2vw;
+  border: 2px solid greenyellow;
+}
+ .imgcon{
+  width: 50%;
+  height: 100%;
+   margin-top: 6.5vw;
+   margin-right: 2vw;
+   
+ } 
+ .acercon .imgcon{
+  padding-top: 10vw;
+ }
+ .sonycon{
+  background-color: transparent;
+  border: 2px solid aqua;
+  width: 60vw;
+  height: 65vh;
+  margin-top: 10vw;
+  display: flex;
+  align-items: center;
+  
+}
+.sonycon .imgcon{
+ padding-top: 6vw;
+ } 
+ .sonycon button{
+  border: 2px solid aqua;
+ }
+ .samsungcon {
+  background-color: #fff;
+  border: 2px solid crimson;
+  width: 60vw;
+  height: 65vh;
+  margin-top: 10vw;
+  display: flex;
+  align-items: center;
+  
+}
+.samsungcon .imgcon{
+  padding-top: 6vw;
+}
+.samsungcon button{
+  border: 2px solid crimson;
+}
+.lgcon {
+  background-color: #fff;
+  border: 2px solid darkorange;
+  width: 60vw;
+  height: 65vh;
+  margin-top: 10vw;
+  display: flex;
+  align-items: center;
+  
+}
+.lgcon .imgcon{
+  padding-top: 6vw;
+}
+.lgcon button{
+  border: 2px solid darkorange;
+}
+.tclcon {
+  background-color: #fff;
+  border: 2px solid hotpink;
+  width: 60vw;
+  height: 65vh;
+  margin-top: 10vw;
+  display: flex;
+  align-items: center;
+ 
+  
+}
+.tclcon .imgcon{
+  padding-top: 6vw;
+text-align: center;
+}
+.tclcon button{
+  border: 2px solid hotpink;
+}
+.skycon {
+  background-color: #fff;
+  border: 2px solid skyblue;
+  width: 60vw;
+  height: 65vh;
+  margin-top: 10vw;
+  display: flex;
+  align-items: center;
+ 
+  
+}
+.skycon .imgcon{
+text-align: center;
+padding-top: 6vw;
+}
+.skycon button{
+  border: 2px solid skyblue;
+}
+.footer{background-color: #000a;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 4px solid aqua;
+  
+
+}
+.copy{
+  background-color: #ff5e5e;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copy p{
+  line-height: 12px;
+  font-weight: 400;
+}
+@media (max-width:600px)
+{
+  #nav{
+   /*background-color: aqua;*/
+   height: 5%;
+   color: #000;
+   padding: 0 5vw;
+  }
+  #nav h4{
+    font-size: 6vh;
+    display: none;
+  }
+  #nav i{
+    display: block;
+    font-size: 100%;
+    margin-left: 20%;
+  }
+  #nav img{
+    margin-left: 10vh;
+   font-size: 10%;
+
+  }
+  .video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+  
+   }
+   .main{
+  position: relative;
+  
+  }
+  .page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff
+    
+  }
+  
+   .page1 h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 20%;
+  }
+  
+  .page1 h2{
+    text-align: center;
+    font-weight: 800;
+  }
+  .page1 p{
+    font-weight: 500;
+    margin-top: 2%;
+    text-align: center;
+  }
+  
+
+  
+  .page2{
+    margin-top: 20%;
+    height: 50%;
+    /*border-radius: 10%;*/
+    width: 100%;
+    background-color: #fff
+    ;
+  }
+  .acercon{
+    background-color: #fff;
+    border: 2px solid greenyellow;
+    width: 80%;
+    height: 50%;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .text{
+  margin-left: 5vw;
+  margin-top: 20%;
+    width: 50%;
+    height: 100%;
+  
+  }
+  
+  .text p{
+    font-size: 2.2vw;
+    font-weight: 600;
+    margin-top: 4vw;
+  }
+  .text button{
+    height: 7vh;
+    width: 12vw;
+    margin-top: 2vw;
+    border: 2px solid greenyellow;
+  }
+   .imgcon{
+    width: 100%;
+    height: 50%%;
+    
+    text-align: center;
+     
+   } 
+   .acercon .imgcon{
+    padding-top: 10vw;
+   }
+   .sonycon{
+    background-color: transparent;
+    border: 2px solid aqua;
+    width: 80%;
+    height: 50%;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .sonycon .imgcon{
+   text-align: center;
+   } 
+   .sonycon button{
+    border: 2px solid aqua;
+   }
+   .samsungcon {
+    background-color: #fff;
+    border: 2px solid crimson;
+    width: 80%;
+    height: 50%;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .samsungcon .imgcon{
+   text-align: center;
+  }
+  .samsungcon button{
+    border: 2px solid crimson;
+  }
+  .lgcon {
+    background-color: #fff;
+    border: 2px solid darkorange;
+    width: 80%;
+    height: 50%;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .lgcon .imgcon{
+  text-align: center;
+  }
+  .lgcon button{
+    border: 2px solid darkorange;
+  }
+  .tclcon {
+    background-color: #fff;
+    border: 2px solid hotpink;
+    width: 80%;
+    height: 50%;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .tclcon .imgcon{
+  text-align: center;
+  }
+  .tclcon button{
+    border: 2px solid hotpink;
+  }
+  .skycon {
+    background-color: #fff;
+    border: 2px solid skyblue;
+    width: 80%;
+    height: 50%;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .skycon .imgcon{
+  text-align: center;
+  }
+  .skycon button{
+    border: 2px solid skyblue;
+  }
+    
+  .logo{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+     margin-left: 20px;
+     display: none;
+  
+  }
+  .footer{background-color: #000a;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+  justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 4px solid aqua;
+    
+  
+  }
+  .copy{
+    background-color: #ff5e5e;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copy p{
+    line-height: 12px;
+    font-weight: 400;
+  }
+}
+@media (max-width:450px) {
+  
+  #nav{
+    /*background-color: aqua;*/
+    height: 3%;
+    color: #000;
+    padding: 0 5%;
+   }
+   #nav h4{
+     font-size: 6vh;
+     display: none;
+   }
+   #nav i{
+    display: block;
+     margin-left: 55vw;
+     margin-top: 10vw;
+     font-size: 100%;
+   
+   }
+   #nav img{
+     margin-left: 10%;
+     height: 30%;
+     display: none;
+    
+ 
+   }
+   .video{
+     height: 100vh;
+     width: 100vw;
+     object-fit: cover;
+     position: fixed;
+     overflow: hidden;
+   
+    }
+    .main{
+   position: relative;
+   
+   }
+   .page1{
+     height: 100vh;
+     width: 100%;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color:#fff
+     
+   }
+   
+   .page1 h1{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 860;
+    margin:20% 1% 1% 1%;
+    }
+   
+   .page1 h2{
+     text-align: center;
+     font-weight: 700;
+     font-size: 3.5vw;
+   }
+   .page1 p{
+    font-size: 2vw;
+     font-weight: 400;
+     margin-top: 2%;
+     text-align: center;
+   }
+   
+ 
+   
+   .page2{
+     margin-top: 20%;
+     height: 50%;
+     /*border-radius: 10%;*/
+     width: 100%;
+     background-color: #fff
+     ;
+   }
+   .acercon{
+     background-color: #fff;
+     border: 2px solid greenyellow;
+     width: 98%;
+     height: 50%;
+     margin-top: 10vw;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     
+   }
+   .text{
+   margin-left: 5vw;
+   margin-top: 20%;
+     width: 50%;
+     height: 100%;
+   
+   }
+   
+   .text p{
+     font-size: 2.2vw;
+     font-weight: 600;
+    
+   }
+   .text button{
+     height: 7vh;
+     width: 12vw;
+     margin-top: 2vw;
+     border: 2px solid greenyellow;
+   }
+   .imgcon{
+    text-align: center;
+    padding-left: 1%;
+    overflow: hidden;
+    
+   }
+   .acercon button{
+   text-align: center;
+    font-size: 7vw;
+    width: 40vw;
+     border: 2px solid greenyellow;
+   }
+    .sonycon{
+     background-color: transparent;
+     border: 2px solid aqua;
+     width: 98%;
+     height: 50%;
+     margin-top: 10vw;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     
+   }
+   .sonycon .imgcon{
+    text-align: center;
+    padding-left: 1%;
+    overflow: hidden;
+    
+   }
+   .sonycon button{
+    align-items: center;
+    font-size: 7vw;
+    width: 40vw;
+     border: 2px solid aqua;
+   }
+    .samsungcon {
+     background-color: #fff;
+     border: 2px solid crimson;
+     width: 98%;
+     height: 50%;
+     margin-top: 10vw;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     
+   }
+   .samsungcon .imgcon{
+    text-align: center;
+    padding-left: 1%;
+    overflow: hidden;
+    
+   }
+   .samsungcon button{
+    align-items: center;
+    font-size: 7vw;
+    width: 40vw;
+     border: 2px solid crimson;
+   }
+   .lgcon {
+     background-color: #fff;
+     border: 2px solid darkorange;
+     width: 98%;
+     height: 50%;
+     margin-top: 10%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     
+   }
+   .lgcon .imgcon{
+   text-align: center;
+  padding-left: 1%;
+  overflow: hidden;
+   }
+   .lgcon button{
+    align-items: center;
+    font-size: 7vw;
+    width: 40vw;
+     border: 2px solid darkorange;
+   }
+   .tclcon {
+    background-color: #fff;
+    border: 2px solid hotpink;
+    width: 98%;
+     height: 50%;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    
+  }
+  .tclcon .imgcon{
+    padding-top: 6vw;
+  text-align: center;
+  }
+  .tclcon button{
+    align-items: center;
+    font-size: 7vw;
+    width: 40vw;
+    border: 2px solid hotpink;
+  }
+  .skycon {
+    background-color: #fff;
+    border: 2px solid skyblue;
+    width: 98%;
+     height: 50%;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+  }
+  .skycon .imgcon{
+  text-align: center;
+  padding-top: 6vw;
+  }
+  .skycon button{
+    align-items: center;
+    font-size: 7vw;
+    width: 40vw;
+    border: 2px solid skyblue;
+  }
+   .logo{
+     display: flex;
+     justify-content: space-between;
+     margin: 20px 40px;
+      margin-left: 20px;
+      display: none;
+   
+   }
+   .footer{background-color: #000a;
+     width: 100%;
+     height: 30vh;
+     display: flex;
+   justify-content: space-evenly;
+     align-items: center;
+     border-bottom: 4px solid aqua;
+     flex-direction: column;
+   
+   }
+   .copy{
+     background-color: #ff5e5e;
+     height: 10vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+   }
+   .copy p{
+     line-height: 12px;
+     font-weight: 400;
+   }
+ }
+@media (max-width:350px) {
+  .video{
+    height: 100%;
+    width: 100%;
+  }
+}
